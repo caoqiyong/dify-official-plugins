@@ -9,6 +9,13 @@ through a unified OpenAI-compatible API.
 Install the WattCloud plugin, then configure it by entering your API Key.
 Get your API Key from [WattCloud](https://www.watt-cloud.com/).
 
+## Usage
+
+1. In Dify, go to **Settings → Model Provider** and install the WattCloud plugin.
+2. Enter your WattCloud API Key and save.
+3. Select a WattCloud model (e.g. GLM-5.3, DeepSeek-V4-Pro, Kimi-K3) in any
+   chat, agent, or workflow app and start generating.
+
 ## About WattCloud
 
 - Website: https://www.watt-cloud.com/
@@ -16,4 +23,5 @@ Get your API Key from [WattCloud](https://www.watt-cloud.com/).
 
 ## Contact
 
+- Source repository: https://github.com/yqcao_magik123/wattcloud
 - Email: support@watt-cloud.com

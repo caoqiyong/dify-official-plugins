@@ -120,7 +120,6 @@ class WattCloudLargeLanguageModel(OAICompatLargeLanguageModel):
                 ),
                 ParameterRule(
                     name="enable_thinking",
-                    use_template="enable_thinking",
                     default=True,
                     label=I18nObject(en_us="Thinking mode", zh_hans="思考模式"),
                     type=ParameterType.BOOLEAN,

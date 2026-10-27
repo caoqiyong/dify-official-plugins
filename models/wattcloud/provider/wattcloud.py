@@ -15,10 +15,6 @@ class WattCloudProvider(ModelProvider):
         """
         try:
             model_instance = self.get_model_instance(ModelType.LLM)
-            if isinstance(model_instance, type):
-                model_instance = model_instance(
-                    model_schemas=self.provider_schema.models
-                )
             model_instance.validate_credentials(
                 model="GLM-5.3-Flash",
                 credentials=credentials,
