@@ -1,0 +1,42 @@
+version: 0.0.1
+type: plugin
+author: yqcao_magik123
+name: wattcloud
+label:
+  en_US: WattCloud
+  zh_Hans: WattCloud
+description:
+  en_US: >-
+    WattCloud provides access to various AI models (LLMs) through a unified
+    OpenAI-compatible API key.
+  zh_Hans: >-
+    WattCloud 提供对各种 AI 模型（LLM）的访问，可通过统一 API Key 调用。
+icon: wattcloud_square.png
+resource:
+  memory: 268435456
+  permission:
+    model:
+      enabled: true
+      llm: true
+      text_embedding: false
+      rerank: false
+      tts: false
+      speech2text: false
+      moderation: false
+plugins:
+  models:
+    - provider/wattcloud.yaml
+meta:
+  version: 0.0.1
+  arch:
+    - amd64
+    - arm64
+  runner:
+    language: python
+    version: "3.12"
+    entrypoint: main
+  minimum_dify_version: 1.0.0
+created_at: "2026-10-26T12:00:00+08:00"
+privacy: PRIVACY.md
+contact: support@watt-cloud.com
+verified: false
